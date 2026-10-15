@@ -11,12 +11,13 @@ package dectectorpalindormo;
 
 public class DectectorPalindormo {
 
-    
+    //Metodo publico
     public static boolean esPalindromo(String palabra) {
         palabra = palabra.toLowerCase().replace(" ", "");
         return esPalindromo(palabra, 0, palabra.length() - 1);
     }
 
+    //Metodo recursivo
     private static boolean esPalindromo(String palabra, int inicio, int fin) {
 
        
